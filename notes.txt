@@ -1,0 +1,11 @@
+Notes: 
+
+1. Installation 
+
+- Technically, we’re installing the rspec-rails library, which includes rspec-core and a
+few other standalone gems.
+
+- You’ll want to include the rspec-rails dependency
+in such a way that it loads in both the Rails development and test
+environments, but not the production environment. In other words, you
+don’t want to run tests on your server.
