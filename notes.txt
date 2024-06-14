@@ -9,3 +9,23 @@ few other standalone gems.
 in such a way that it loads in both the Rails development and test
 environments, but not the production environment. In other words, you
 don’t want to run tests on your server.
+
+- Remember to run bundle install. 
+
+- Configure test in database.yml 
+- rails generate rspec:install
+
+files:
+.rspec configuration file 
+helper files: in /spec
+
+- Next–and this is optional–I like to change RSpec’s output from the default format to
+the easy-to-read documentation format. This makes it easier to see which specs are
+passing and which are failing as your suite runs. 
+
+rspec
+--require spec_helper
+--format documentation
+
+Alternatively, you can also add the --warnings flag to this file, too. When warnings
+are enabled, RSpec’s output will include any and all warnings thrown by your application and gems it uses. 
